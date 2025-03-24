@@ -13,6 +13,7 @@ public interface PersonRepository extends Repository<Person, Passport> {
 
     List<Person> findAll();
     List<Person> findByPassportNumber(String passport_number);
+    // https://youtrack.jetbrains.com/issue/IDEA-369671/Spring-JPA-findById-findAllById-methods-are-reported-as-errors-in-case-of-EmbeddedId
     Optional<Person> findById(Passport passport);
     List<Person> findAllById(Iterable<Passport> passports);
 }
