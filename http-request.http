@@ -1,0 +1,17 @@
+###
+GET http://localhost:8080/getByIds
+
+###
+GET http://localhost:8080/getById?
+    passportNum=111111&
+    from=01.01.2000&
+    until=01.01.2010
+
+
+###
+GET http://localhost:8080/getByPassNumber/333333
+
+###
+
+###
+GET http://localhost:8080/all
